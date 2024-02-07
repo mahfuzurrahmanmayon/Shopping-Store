@@ -16,8 +16,9 @@ const Navbar = () => {
             <Link to="/all" className="nav_link w-nav-link">
               ALL
             </Link>
-            <Link to="/women" className="nav_link w-nav-link">
-              WOMEN
+            
+            <Link to="/women" className='nav_link w-nav-link'>
+              Women
             </Link>
             <Link to="/men" className="nav_link w-nav-link">
               MEN

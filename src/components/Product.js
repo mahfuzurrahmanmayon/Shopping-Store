@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const Product = ({ imgSrc, rating, productName, productPrice }) => {
+const Product = (props) => {
     return (
       <div className="single-product">
         <div className="product-img">
-          <img src={imgSrc} loading="lazy" alt="" />
+          <img src={props.image} loading="lazy" alt="" />
         </div>
-        <div className="rating">Rating: {rating}</div>
-        <div className="product-name">{productName}</div>
-        <div className="product-price">${productPrice}</div>
+        <div className="rating">Rating: {props.rating}</div>
+        <div className="product-name">{props.name}</div>
+        <div className="product-price">${props.price}</div>
         <Link to="#" className="product-details-btn w-inline-block">
           <div>View Item</div>
         </Link>

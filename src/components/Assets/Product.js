@@ -1,33 +1,35 @@
-import p1_img from "../components/P-01.jpg"
-import p2_img from "../components/P-02.jpg"
-import p3_img from "../components/P-03.jpg"
-import p4_img from "../components/P-04.jpg"
-import p5_img from "../components/P-05.jpg"
-import p6_img from "../components/P-06.jpg"
-import p7_img from "../components/P-07.jpg"
-import p8_img from "../components/P-08.jpg"
-import p9_img from "../components/P-09.jpg"
-import p10_img from "../components/P-10.jpg"
-import p11_img from "../components/P-11.jpg"
-import p12_img from "../components/P-12.jpg"
-import p13_img from "../components/P-13.jpg"
-import p14_img from "../components/P-14.jpg"
-import p15_img from "../components/P-15.jpg"
-import p16_img from "../components/P-16.jpg"
-import p17_img from "../components/P-17.jpg"
-import p18_img from "../components/P-18.jpg"
-import p19_img from "../components/P-19.jpg"
-import p20_img from "../components/P-20.jpg"
-import p21_img from "../components/P-21.jpg"
-import p22_img from "../components/P-22.jpg"
-import p23_img from "../components/P-23.jpg"
-import p24_img from "../components/P-24.jpg"
-import p25_img from "../components/P-25.jpg"
-import p26_img from "../components/P-26.jpg"
-import p27_img from "../components/P-27.jpg"
-import p28_img from "../components/P-28.jpg"
-import p29_img from "../components/P-29.jpg"
-import p30_img from "../components/P-30.jpg"
+import p1_img from "./product_1.png";
+import p2_img from "./product_2.png";
+import p3_img from "./product_3.png";
+import p4_img from "./product_4.png";
+import p5_img from "./product_5.png";
+import p6_img from "./product_6.png";
+import p7_img from "./product_7.png";
+import p8_img from "./product_8.png";
+import p9_img from "./product_9.png";
+import p10_img from "./product_10.png";
+import p11_img from "./product_11.png";
+import p12_img from "./product_12.png";
+import p13_img from "./product_13.png";
+import p14_img from "./product_14.png";
+import p15_img from "./product_15.png";
+import p16_img from "./product_16.png";
+import p17_img from "./product_17.png";
+import p18_img from "./product_18.png";
+import p19_img from "./product_19.png";
+import p20_img from "./product_20.png";
+import p21_img from "./product_21.png";
+import p22_img from "./product_22.png";
+import p23_img from "./product_23.png";
+import p24_img from "./product_24.png";
+import p25_img from "./product_25.png";
+import p26_img from "./product_26.png";
+import p27_img from "./product_27.png";
+import p28_img from "./product_28.png";
+import p29_img from "./product_29.png";
+
+
+
 
 let all_products = [
     {
@@ -266,9 +268,10 @@ let all_products = [
       id: 30,
       name: "Cool Space Theme Kids Analog Watch",
       category: "kid",
-      image: p30_img,
+      image: p29_img,
       rating: 4.2,
       price: 85.0,
     },
 ];
-  
+
+export default all_products
