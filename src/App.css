@@ -6,4 +6,11 @@
 .product-name{
     text-align: center;
 }
-  
+.product-details-btn{
+    transition: .3s ease-in-out;
+}
+.product-details-btn:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}

@@ -6,6 +6,7 @@ import  {BrowserRouter, Routes, Route} from 'react-router-dom';
 import AllProductsSection from './components/AllProduct';
 import "./App.css"
 import Women from "./components/Women";
+import Men from "./components/Men";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route path='/' />
           <Route path='/all' element={<AllProductsSection />} />
           <Route path='/women' element={<Women />} />
-          <Route path='/men' element={<Women />} />
+          <Route path='/men' element={<Men />} />
           <Route path='/cart' element={<AllProductsSection />} />
         </Routes>
       </BrowserRouter>
