@@ -10,8 +10,8 @@ const Product = (props) => {
         <div className="rating">Rating: {props.rating}</div>
         <div className="product-name">{props.name}</div>
         <div className="product-price">${props.price}</div>
-        <Link to="#" className="product-details-btn w-inline-block">
-          <div>View Item</div>
+        <Link to="/" className="product-details-btn w-inline-block" >
+            <div>View Item</div>
         </Link>
       </div>
     );

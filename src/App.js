@@ -7,21 +7,23 @@ import AllProductsSection from './components/AllProduct';
 import "./App.css"
 import Women from "./components/Women";
 import Men from "./components/Men";
+import Cart from "./components/Cart";
+import ViewItem from "./components/ViewItem";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <ViewItem />
         <Routes>
           <Route path='/' />
           <Route path='/all' element={<AllProductsSection />} />
           <Route path='/women' element={<Women />} />
           <Route path='/men' element={<Men />} />
-          <Route path='/cart' element={<AllProductsSection />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>
       </BrowserRouter>
-
       <HeroSection />
       <ServiceSection />
       <FooterSection />
