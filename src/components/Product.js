@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const Product = (props) => {
+
     return (
       <div className="single-product">
         <div className="product-img">
@@ -10,7 +11,7 @@ const Product = (props) => {
         <div className="rating">Rating: {props.rating}</div>
         <div className="product-name">{props.name}</div>
         <div className="product-price">${props.price}</div>
-        <Link to="/" className="product-details-btn w-inline-block" >
+        <Link to={`/all/${props.id}`} className="product-details-btn w-inline-block" >
             <div>View Item</div>
         </Link>
       </div>
