@@ -52,12 +52,18 @@ button {
     border-color: #000;
     color: #fff;
     font-size: 30px;
-    width: 100px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
 }
 .update-input {
     width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f00;
+    border-radius: 50%;
     font-size: 25px;
     margin: 0 5px;
-    padding: 5px 10px;
 }
