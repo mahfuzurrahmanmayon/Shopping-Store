@@ -11,6 +11,12 @@ const ViewItem = () => {
   const [addToCart, setAddToCart] = useState([])
 
   useEffect(() => {
+    const storedCart = JSON.parse(localStorage.getItem('cart'));
+    setAddToCart(storedCart || []);
+  }, []);
+
+
+  useEffect(() => {
     const filteredProductData = all_products.filter((product) => product.id === parseInt(productId));
     console.log('Filtered products:', filteredProductData[0]);
     setProductData(filteredProductData.length > 0 ? filteredProductData[0] : null);
@@ -31,9 +37,12 @@ const ViewItem = () => {
     console.log(filteredProductAddData)
     const updatedCart = [...addToCart];
     updatedCart.push(filteredProductAddData[0]);
+    
     console.log("AddToCart Array:: ",updatedCart)
+    localStorage.setItem('cart', JSON.stringify(updatedCart));
     setAddToCart(updatedCart)
   }
+
 
   return (
     <>
@@ -42,7 +51,6 @@ const ViewItem = () => {
             <div className='view-item-wrapper'>
               <div className='view-item-img'>
                 {productData ? <img src={productData.image} alt="" /> : <div>No Image Found</div>}
-                
               </div>
               <div className='view-item-details'>
                 {productData ? (

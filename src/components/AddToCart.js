@@ -1,6 +1,7 @@
 import React from 'react';
 
 const AddToCart = ({ addToCartItems }) => {
+  console.log(addToCartItems)
   return (
     <div className='add-to-cart-section'>
       <h3>Cart Items:</h3>
