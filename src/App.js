@@ -9,8 +9,10 @@ import Women from "./components/Women";
 import Men from "./components/Men";
 import ViewItem from "./components/ViewItem";
 import AddToCart from "./components/AddToCart";
+import { useState } from "react";
 
 function App() {
+  const [addToCart, setAddToCart] = useState([]);
   return (
     <div className="App">
       <BrowserRouter>
@@ -20,8 +22,8 @@ function App() {
           <Route path='/all' element={<AllProductsSection />} />
           <Route path='/women' element={<Women />} />  
           <Route path='/men' element={<Men />} />
-          <Route path='/cart' element={<AddToCart/>} />
-          <Route path='/all/:productId' element={<ViewItem />} />
+          <Route path='/cart' element={<AddToCart addToCartItems={addToCart} />} />
+          <Route path='/all/:productId' element={<ViewItem addToCart={addToCart} setAddToCart={setAddToCart} />} />
         </Routes>
       </BrowserRouter>
       <HeroSection />
