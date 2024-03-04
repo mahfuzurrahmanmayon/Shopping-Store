@@ -7,8 +7,8 @@ import AllProductsSection from './components/AllProduct';
 import "./App.css"
 import Women from "./components/Women";
 import Men from "./components/Men";
-import Cart from "./components/Cart";
 import ViewItem from "./components/ViewItem";
+import AddToCart from "./components/AddToCart";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path='/all' element={<AllProductsSection />} />
           <Route path='/women' element={<Women />} />  
           <Route path='/men' element={<Men />} />
-          <Route path='/cart' element={<Cart />} />
+          <Route path='/cart' element={<AddToCart/>} />
           <Route path='/all/:productId' element={<ViewItem />} />
         </Routes>
       </BrowserRouter>
