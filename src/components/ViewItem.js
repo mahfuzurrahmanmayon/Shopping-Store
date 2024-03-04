@@ -10,7 +10,7 @@ const ViewItem = ({ addToCart, setAddToCart }) => {
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart"));
     setAddToCart(storedCart || []);
-  }, []);
+  }, [setAddToCart]);
 
   useEffect(() => {
     const filteredProductData = all_products.filter(
@@ -22,19 +22,27 @@ const ViewItem = ({ addToCart, setAddToCart }) => {
     );
   }, [productId]);
 
-
-
   const handleAddToCart = () => {
     const filteredProductAddData = all_products.filter(
       (product) => product.id === parseInt(productId)
     );
-    // console.log(filteredProductAddData)
-    const updatedCart = [...addToCart];
-    updatedCart.push(filteredProductAddData[0]);
 
-    // console.log("AddToCart Array:: ",updatedCart)
-    localStorage.setItem("cart", JSON.stringify(updatedCart));
-    setAddToCart(updatedCart);
+    const existingCartItemIndex = addToCart.findIndex(
+      (item) => item.id === filteredProductAddData[0].id
+    );
+
+    console.log(existingCartItemIndex);
+
+    if (existingCartItemIndex === -1) {
+      // Product not already in the cart, add it
+      const updatedCart = [...addToCart, filteredProductAddData[0]];
+    
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
+      setAddToCart(updatedCart);
+    } else {
+      // Product already in the cart, show alert
+      alert("This item is already added to your cart.");
+    }
   };
 
   return (
@@ -62,7 +70,7 @@ const ViewItem = ({ addToCart, setAddToCart }) => {
                   <p>
                     <strong>Category:</strong> {productData.category}
                   </p>
-                  
+
                   <button
                     onClick={handleAddToCart}
                     className="product-details-btn w-inline-block mt-30"
@@ -77,10 +85,6 @@ const ViewItem = ({ addToCart, setAddToCart }) => {
           </div>
         </div>
       </div>
-      {/* <Routes>
-          <Route path="/cart" element={<AddToCart addToCartItems={addToCart} />} />
-        </Routes> */}
-      {/* <AddToCart addToCartItems={addToCart} /> */}
     </>
   );
 };

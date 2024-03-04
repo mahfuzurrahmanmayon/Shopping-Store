@@ -1,62 +1,37 @@
-import React, { useState } from 'react';
+import React, {  } from 'react';
 
-const AddToCart = ({ addToCartItems }) => {
+const AddToCart = ({ addToCartItems  }) => {
   console.log(addToCartItems); 
-  const [counter, setCounter] = useState(1);
-
-
-  const handleIncrement = () => {
-    setCounter(counter + 1);
-  };
-
-  const handleDecrement = () => {
-    if (counter > 1) {
-      setCounter(counter - 1);
-    }
-  };
-
-
   return (
     <div className='add-to-cart-section'>
       <h3>Your Cart</h3>
       <table>
         <thead>
           <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
+            <th className='header'>Product</th>
+            <th className='header'>Price</th>
+            <th className='header'>Quantity</th>
+            <th className='header'>Total</th>
           </tr>
         </thead>
         <tbody>
           {addToCartItems.length > 0 ? ( 
             addToCartItems.map(item => ( 
-              <tr key={item.id}>
-                <td>
+              <tr className='tr' key={item.id}>
+                <td className='cart-product-img'>
                   <img src={item.image} alt={item.name} />
                   <h3>{item.name}</h3>
                 </td>
-                <td>
-                  <h4>{item.price}</h4>
+                <td className='cart-product-price'>
+                  <h4>${item.price}</h4>
                 </td>
-                <td>
-                <div className="quantity">
-                    <div
-                      onClick={() => handleDecrement()}
-                      className="update-number"
-                    >
-                      -
-                    </div>
-                    <div className="update-input">{counter}</div>
-                    <div
-                      onClick={() => handleIncrement()}
-                      className="update-number"
-                    >
-                      +
-                    </div>
-                  </div>
+                <td className='cart-product-quantity'>
+                  <h4>1</h4>
                 </td>
-                <td>{item.total}</td>
+                <td className='cart-product-total'>
+                  <h4>$85</h4>
+                </td>
+                
               </tr>
             ))
           ) : (
