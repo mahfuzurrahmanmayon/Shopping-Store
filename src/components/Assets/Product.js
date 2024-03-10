@@ -39,6 +39,7 @@ let all_products = [
       image: p1_img,
       rating: 4.5,
       price: 50.0,
+      quantity: 1,
     },
     {
       id: 2,
@@ -47,6 +48,7 @@ let all_products = [
       image: p2_img,
       rating: 4.2,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 3,
@@ -55,6 +57,7 @@ let all_products = [
       image: p3_img,
       rating: 4.7,
       price: 60.0,
+      quantity: 1,
     },
     {
       id: 4,
@@ -63,6 +66,7 @@ let all_products = [
       image: p4_img,
       rating: 4.0,
       price: 100.0,
+      quantity: 1,
     },
     {
       id: 5,
@@ -71,6 +75,7 @@ let all_products = [
       image: p5_img,
       rating: 4.5,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 6,
@@ -79,6 +84,7 @@ let all_products = [
       image: p6_img,
       rating: 4.2,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 7,
@@ -87,6 +93,7 @@ let all_products = [
       image: p7_img,
       rating: 4.8,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 8,
@@ -95,6 +102,7 @@ let all_products = [
       image: p8_img,
       rating: 4.3,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 9,
@@ -103,6 +111,7 @@ let all_products = [
       image: p9_img,
       rating: 4.7,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 10,
@@ -111,6 +120,7 @@ let all_products = [
       image: p10_img,
       rating: 4.5,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 11,
@@ -119,6 +129,7 @@ let all_products = [
       image: p11_img,
       rating: 4.6,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 12,
@@ -127,6 +138,7 @@ let all_products = [
       image: p12_img,
       rating: 4.1,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 13,
@@ -135,6 +147,7 @@ let all_products = [
       image: p13_img,
       rating: 4.5,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 14,
@@ -143,6 +156,7 @@ let all_products = [
       image: p14_img,
       rating: 4.2,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 15,
@@ -151,6 +165,7 @@ let all_products = [
       image: p15_img,
       rating: 4.7,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 16,
@@ -159,6 +174,7 @@ let all_products = [
       image: p16_img,
       rating: 4.0,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 17,
@@ -167,6 +183,7 @@ let all_products = [
       image: p17_img,
       rating: 4.5,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 18,
@@ -175,6 +192,7 @@ let all_products = [
       image: p18_img,
       rating: 4.3,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 19,
@@ -183,6 +201,7 @@ let all_products = [
       image: p19_img,
       rating: 4.8,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 20,
@@ -191,6 +210,7 @@ let all_products = [
       image: p20_img,
       rating: 4.2,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 21,
@@ -199,6 +219,7 @@ let all_products = [
       image: p21_img,
       rating: 4.7,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 22,
@@ -207,6 +228,7 @@ let all_products = [
       image: p22_img,
       rating: 4.3,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 23,
@@ -215,6 +237,7 @@ let all_products = [
       image: p23_img,
       rating: 4.6,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 24,
@@ -223,6 +246,7 @@ let all_products = [
       image: p24_img,
       rating: 4.1,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 25,
@@ -231,6 +255,7 @@ let all_products = [
       image: p25_img,
       rating: 4.5,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 26,
@@ -239,6 +264,7 @@ let all_products = [
       image: p26_img,
       rating: 4.2,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 27,
@@ -247,6 +273,7 @@ let all_products = [
       image: p27_img,
       rating: 4.7,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 28,
@@ -255,6 +282,7 @@ let all_products = [
       image: p28_img,
       rating: 4.0,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 29,
@@ -263,6 +291,7 @@ let all_products = [
       image: p29_img,
       rating: 4.5,
       price: 85.0,
+      quantity: 1,
     },
     {
       id: 30,
@@ -271,6 +300,7 @@ let all_products = [
       image: p29_img,
       rating: 4.2,
       price: 85.0,
+      quantity: 1,
     },
 ];
 

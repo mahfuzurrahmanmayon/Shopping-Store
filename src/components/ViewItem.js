@@ -31,19 +31,21 @@ const ViewItem = ({ addToCart, setAddToCart }) => {
       (item) => item.id === filteredProductAddData[0].id
     );
 
-    console.log(existingCartItemIndex);
 
     if (existingCartItemIndex === -1) {
       // Product not already in the cart, add it
-      const updatedCart = [...addToCart, filteredProductAddData[0]];
-    
+      const updatedCart = [
+        ...addToCart,filteredProductAddData[0],
+      ];
+
       localStorage.setItem("cart", JSON.stringify(updatedCart));
       setAddToCart(updatedCart);
     } else {
-      // Product already in the cart, show alert
       alert("This item is already added to your cart.");
     }
   };
+
+  
 
   return (
     <>
